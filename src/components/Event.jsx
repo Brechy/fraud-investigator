@@ -4,6 +4,7 @@ import {Message} from 'semantic-ui-react'
 import highkitty from '../img/highkitty.jpg'
 import mediumkitty from '../img/mediumkitty.jpeg'
 import lowkitty from '../img/lowkitty.jpeg'
+import MoreInfo from './MoreInfo'
 
 const LOW_THRESHOLD = 1.0/3.0
 const MED_THRESHOLD = 2.0/3.0
@@ -38,9 +39,7 @@ return x.toFixed(1) + '%'
       <div>
       <Card.Content extra>
         <div className='ui two buttons'>
-          <Button basic color="blue">
-            More Information
-          </Button>
+          <MoreInfo />
         </div>
       </Card.Content>
       </div>
