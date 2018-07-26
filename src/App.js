@@ -24,11 +24,11 @@ class App extends Component {
         <div className="menu">
           <MenuBar />
         </div>
-        <div className="flex-container">
+        <a>
         <div className="cards">
           <Events events={this.state.events} />
         </div>
-        </div>
+        </a>
       </div>
     );
   }

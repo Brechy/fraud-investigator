@@ -3,7 +3,6 @@ import { Button, Modal } from 'semantic-ui-react'
 
 class MoreInfo extends Component {
   state = { open: false }
-
   show = size => () => this.setState({ size, open: true })
   close = () => this.setState({ open: false })
 
@@ -17,7 +16,15 @@ class MoreInfo extends Component {
         <Modal size={size} open={open} onClose={this.close}>
           <Modal.Header>More information</Modal.Header>
           <Modal.Content>
-            <p>How would you like to proceed?</p>
+          <p>
+            Country: {this.props.country}
+            <br></br>
+            Currency: {this.props.currency}
+            <br></br>
+            Max Tickets Avail: {this.props.max}
+            <br></br>
+            Tickets Sold: {this.props.tickets}
+          </p>
           </Modal.Content>
           <Modal.Actions>
             <Button negative>Report Event</Button>

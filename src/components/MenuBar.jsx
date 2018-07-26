@@ -3,7 +3,7 @@ import {Menu, Image, Header} from 'semantic-ui-react'
 
 const MenuBar = () => {
   return (
-     <Menu position="right">
+     <Menu>
         <Menu.Item
           name='home'
         >
@@ -14,9 +14,11 @@ const MenuBar = () => {
         >
           Investigations
         </Menu.Item>
-          <Header as="h2">
-            <Image float="right" circular src='https://react.semantic-ui.com/images/avatar/large/patrick.png' /> Patrick
+        <div className="userimg">
+          <Header as="h5" floated="right">
+            <Image circular src='https://react.semantic-ui.com/images/avatar/large/patrick.png' /> Patrick S.
           </Header>
+        </div>
       </Menu>
   )
 }
