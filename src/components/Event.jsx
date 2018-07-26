@@ -8,15 +8,21 @@ import lowkitty from '../img/lowkitty.jpeg'
 const LOW_THRESHOLD = 1.0/3.0
 const MED_THRESHOLD = 2.0/3.0
 
-// https://repl.it/repls/MadeupSnowOpposites
+const percent = (x) => {
+x*=100
+return x.toFixed(1) + '%'
+}
 
   const Event = (props) => {
     let image = highkitty
+    let color = "red"
 
-    if (props.event.probability < LOW_THRESHOLD) {
+    if(props.event.probability < LOW_THRESHOLD) {
       image = lowkitty
+      color = "green"
     } else if (props.event.probability < MED_THRESHOLD) {
       image = mediumkitty
+      color = "yellow"
     }
 
     return (
@@ -24,17 +30,15 @@ const MED_THRESHOLD = 2.0/3.0
       <Card.Content>
         <Image floated='right' size='mini' src={image} />
         <Card.Header> {`${props.event.event_name}`}</Card.Header>
-        <Card.Description>
+        <Card.Description>@
         {`${props.event.venue_name}`}
         </Card.Description>
       </Card.Content>
-      <div>
-        <Message>% goes here</Message>
-      </div>
+        <Message color={color}>There is a {percent(props.event.probability)} chance of fraud</Message>
       <div>
       <Card.Content extra>
         <div className='ui two buttons'>
-          <Button basic color='green'>
+          <Button basic color="blue">
             More Information
           </Button>
         </div>
