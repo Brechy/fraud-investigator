@@ -2,9 +2,9 @@
 
 Web app to render data models to internal users. Two day case study, data predicts probability of fraud for each event that has been registered. Worked directly with team of data scientists that created the model(s) used for the project. The repo for the data, models, and potential backend for this project is located here --> [need repo link from data scientists]
 
-![Dashboard design ](screenshots/dashboard.png "Dashboard shows users list of events with important information regarding probability of fraud")
+![Dashboard design ](/screenshots/dashboard.png "Dashboard shows users list of events with important information regarding probability of fraud")
 
-![More imformation](screenshots/moreinformation.png "View that appears after user clicks the More Information modal button")
+![More imformation](/screenshots/moreinformation.png "View that appears after user clicks the More Information modal button")
 
 ## Built With
 
