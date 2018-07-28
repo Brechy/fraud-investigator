@@ -11,8 +11,8 @@ class App extends Component {
 
   componentDidMount = async () => {
     const eventsJSON = await fetch('/events.json')
-    console.log(eventsJSON, 'This is my array of events')
-    let events = await eventsJSON.json()
+    let events = (await eventsJSON.json())["events"];
+    console.log(events, 'This is my array of events')
 
     this.setState({events})
 
