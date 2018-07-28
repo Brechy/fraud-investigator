@@ -10,8 +10,7 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    const eventsJSON = await fetch('https://fake-db-21522.firebaseio.com/
-')
+    const eventsJSON = await fetch('https://fake-db-21522.firebaseio.com/')
     console.log(eventsJSON, 'This is my array of events')
     let events = await eventsJSON.json()
 
