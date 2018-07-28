@@ -4,7 +4,9 @@ Web app to render data models to internal users. Two day case study, data predic
 
 ![Dashboard design ](/screenshots/dashboard.png "Dashboard shows users list of events with important information regarding probability of fraud")
 
-![More imformation](/screenshots/moreinformation.png "View that appears after user clicks the More Information modal button")
+
+
+![More imformation](/screenshots/moreinformation.jpg "View that appears after user clicks the More Information modal button")
 
 ## Built With
 
