@@ -1,0 +1,30 @@
+{
+  "events" : [ {
+    "country" : "FJ",
+    "currency" : "FJD",
+    "event_name" : "Sebastian Birthday",
+    "id" : 1,
+    "max_sales" : 25,
+    "probability" : 0.5,
+    "tickets_sold" : 12,
+    "venue_name" : "Barb's Pizza Eatery"
+  }, {
+    "country" : "US",
+    "currency" : "USD",
+    "event_name" : "Steve's Beerfest",
+    "id" : 2,
+    "max_sales" : 25,
+    "probability" : 0.1,
+    "tickets_sold" : 12,
+    "venue_name" : "Corn Palace"
+  }, {
+    "country" : "CA",
+    "currency" : "CAD",
+    "event_name" : "Paws for Peace",
+    "id" : 3,
+    "max_sales" : 1200,
+    "probability" : 1,
+    "tickets_sold" : 235,
+    "venue_name" : "Toots and Boots Battery Store"
+  } ]
+}
